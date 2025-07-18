@@ -54,7 +54,7 @@
 .action-btn {
     display: inline-block;
     background: var(--accent);
-    color: white;
+    color: #0a2e2a;
     padding: 12px 25px;
     border-radius: 6px;
     text-decoration: none;
@@ -65,6 +65,7 @@
 
 .action-btn:hover {
     background: #5ae8d0;
+    color: #0a2e2a;
 }
 
 .winners-section {
