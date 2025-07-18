@@ -240,7 +240,7 @@ h1::after {
 
 .custom-upload-btn {
     background: var(--accent);
-    color: white;
+    color: #0a2e2a;
     padding: 12px 25px;
     border: none;
     border-radius: 6px;
@@ -252,6 +252,7 @@ h1::after {
 
 .custom-upload-btn:hover {
     background: #5ae8d0;
+    color: #0a2e2a;
 }
 
 .image-preview {
@@ -343,14 +344,14 @@ h1::after {
 }
 
 .result-stats span {
-    color: var(--light);
+    color: #0a2e2a;
     font-weight: 500;
 }
 
 .reset-btn {
     display: none;
     background: var(--accent);
-    color: white;
+    color: #0a2e2a;
     padding: 12px 25px;
     border: none;
     border-radius: 6px;
@@ -363,6 +364,7 @@ h1::after {
 
 .reset-btn:hover {
     background: #5ae8d0;
+    color: #0a2e2a;
 }
 
 .back-btn {
