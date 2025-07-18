@@ -344,7 +344,7 @@ h1::after {
 }
 
 .result-stats span {
-    color: #0a2e2a;
+    color: var(--accent);
     font-weight: 500;
 }
 
