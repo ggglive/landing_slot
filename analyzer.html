@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slot Analyzer Pro</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="stars" id="stars"></div>
+    
+    <div class="container">
+        <div class="status-bar">
+            <div class="status-item">
+                <div class="status-icon"></div>
+                <div class="status-connected">Connected</div>
+            </div>
+            <div class="status-item">
+                <div class="status-online" id="onlineCounter">247</div>
+            </div>
+        </div>
+        
+        <h1>Slot Analyzer Pro</h1>
+        
+        <div class="content-area">
+            <div class="custom-select" id="customSelect">
+                <div class="select-header" id="selectHeader">
+                    <span class="select-current" id="selectCurrent">Выберите слот</span>
+                    <span class="select-icon">▼</span>
+                </div>
+                <div class="select-options" id="selectOptions">
+	<div class="select-option" data-value="alien">
+		<div class="option-icon">👽</div>
+		<span>Alien Fruits</span>
+	</div>
+	<div class="select-option" data-value="bass">
+		<div class="option-icon">🎣</div>
+		<span>Big Bass Bonanza</span>
+	</div>
+	<div class="select-option" data-value="billion">
+		<div class="option-icon">💰</div>
+		<span>Bonanza Billion</span>
+	</div>
+	<div class="select-option" data-value="bonanza">
+		<div class="option-icon">🍭</div>
+		<span>Sweet Bonanza</span>
+	</div>
+	<div class="select-option" data-value="bonanza1000">
+		<div class="option-icon">💰</div>
+		<span>Sweet Bonanza 1000</span>
+	</div>
+	<div class="select-option" data-value="dog">
+		<div class="option-icon">🐶</div>
+		<span>The Dog House</span>
+	</div>
+	<div class="select-option" data-value="dog-megaways">
+		<div class="option-icon">🏠</div>
+		<span>The Dog House Megaways</span>
+	</div>
+	<div class="select-option" data-value="fiesta">
+		<div class="option-icon">🌶️</div>
+		<span>Hot Fiesta</span>
+	</div>
+	<div class="select-option" data-value="gates">
+		<div class="option-icon">🎰</div>
+		<span>Gates of Olympus</span>
+	</div>
+	<div class="select-option" data-value="gates1000">
+		<div class="option-icon">⚡</div>
+		<span>Gates of Olympus 1000</span>
+	</div>
+	<div class="select-option" data-value="sugar">
+		<div class="option-icon">🍬</div>
+		<span>Sugar Rush</span>
+	</div>
+	<div class="select-option" data-value="sugar1000">
+		<div class="option-icon">🍭</div>
+		<span>Sugar Rush 1000</span>
+	</div>
+	<div class="select-option" data-value="wild-west">
+		<div class="option-icon">🤠</div>
+		<span>Wild West Gold</span>
+	</div>
+	<div class="select-option" data-value="zeus">
+		<div class="option-icon">⚡</div>
+		<span>Zeus vs Hades</span>
+	</div>
+</div>
+            </div>
+            
+            <div id="uploadContainer" class="upload-container">
+                <label class="upload-label" id="uploadLabel">Загрузите скриншот слота:</label>
+                <input type="file" id="fileInput" accept="image/*">
+                <button class="custom-upload-btn" onclick="document.getElementById('fileInput').click()">
+                    Выбрать файл
+                </button>
+                <img id="imagePreview" class="image-preview" src="" alt="Превью скриншота">
+            </div>
+            
+            <div id="analysis" class="analysis">
+                <div class="analysis-content">
+                    <span class="analysis-text">АНАЛИЗИРУЕМ</span>
+                    <div class="dot-animation">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="result" class="result">
+                <div class="result-content">
+                    <div class="result-title">ПРОАНАЛИЗИРОВАНО!</div>
+                    <div class="result-stats" id="resultStats"></div>
+                </div>
+            </div>
+        </div>
+        
+        <button id="resetBtn" class="reset-btn">ЕЩЕ РАЗ</button>
+        <a href="index.html" class="back-btn">
+            <span class="back-icon">←</span>
+            <span>Назад</span>
+        </a>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
